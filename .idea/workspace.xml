@@ -5,23 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a8c48fca-ddff-4d40-8b6e-dbf811d434b5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/javalab/ClientCallback.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/javalab/IWaterFlowMessage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/javalab/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/javalab/MqttApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/javalab/WaterFlowMessage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/javalab/WaterFlowMessageGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/javalab/WaterFlowMessageGeneratorImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/javalab/WaterFlowMessageHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/javalab/enums/QualityOfService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/javalab/WaterFlowMessageGeneratorImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/javalab/WaterFlowMessageTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/javalab/enums/WaterFlowMessageType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/javalab/ClientCallback.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/javalab/ClientCallback.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/javalab/IWaterFlowMessage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/javalab/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/javalab/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/javalab/MqttApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/javalab/MqttApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/javalab/WaterFlowMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/javalab/WaterFlowMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/javalab/WaterFlowMessageGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/javalab/WaterFlowMessageGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/javalab/WaterFlowMessageGeneratorImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/javalab/WaterFlowMessageGeneratorImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/javalab/WaterFlowMessageHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/javalab/MqttMessageHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/javalab/enums/QualityOfService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/javalab/enums/QualityOfService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,9 +30,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Enum" />
         <option value="Class" />
         <option value="Interface" />
+        <option value="Enum" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -43,26 +43,38 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectId" id="2GPsDlV98GbajFvXozovIAB8VSH" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;create.test.in.the.same.root&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
     <key name="ExtractSuperBase.RECENT_KEYS">
       <recent name="org.javalab" />
     </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="org.javalab" />
+    </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Run Mqtt App">
     <configuration name="Run Mqtt App" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="org.javalab.Main" />
       <module name="vjezba2" />
@@ -70,6 +82,93 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="WaterFlowMessageGeneratorImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="vjezba2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.javalab.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.javalab" />
+      <option name="MAIN_CLASS_NAME" value="org.javalab.WaterFlowMessageGeneratorImplTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WaterFlowMessageGeneratorImplTest.whenGenerateWaterFlowMessages_ThenGenerateCorrectly" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="vjezba2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.javalab.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.javalab" />
+      <option name="MAIN_CLASS_NAME" value="org.javalab.WaterFlowMessageGeneratorImplTest" />
+      <option name="METHOD_NAME" value="whenGenerateWaterFlowMessages_ThenGenerateCorrectly" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WaterFlowMessageTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="vjezba2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.javalab.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.javalab" />
+      <option name="MAIN_CLASS_NAME" value="org.javalab.WaterFlowMessageTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WaterFlowMessageTest.givenInitialValues_WhenToString_ThenCorrectString" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="vjezba2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.javalab.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.javalab" />
+      <option name="MAIN_CLASS_NAME" value="org.javalab.WaterFlowMessageTest" />
+      <option name="METHOD_NAME" value="givenInitialValues_WhenToString_ThenCorrectString" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WaterFlowMessageTest.givenProperSerializedMessage_WhenConstruct_ThenDeserializeCorrectly" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="vjezba2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.javalab.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.javalab" />
+      <option name="MAIN_CLASS_NAME" value="org.javalab.WaterFlowMessageTest" />
+      <option name="METHOD_NAME" value="givenProperSerializedMessage_WhenConstruct_ThenDeserializeCorrectly" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.WaterFlowMessageTest.givenInitialValues_WhenToString_ThenCorrectString" />
+        <item itemvalue="JUnit.WaterFlowMessageTest" />
+        <item itemvalue="JUnit.WaterFlowMessageGeneratorImplTest" />
+        <item itemvalue="JUnit.WaterFlowMessageGeneratorImplTest.whenGenerateWaterFlowMessages_ThenGenerateCorrectly" />
+        <item itemvalue="JUnit.WaterFlowMessageTest.givenProperSerializedMessage_WhenConstruct_ThenDeserializeCorrectly" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -80,6 +179,8 @@
       <option name="presentableId" value="Default" />
       <updated>1666301442717</updated>
       <workItem from="1666301444475" duration="36344000" />
+      <workItem from="1667492539026" duration="16241000" />
+      <workItem from="1667510518210" duration="1723000" />
     </task>
     <servers />
   </component>
@@ -96,5 +197,16 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Java_Vjezba2$WaterFlowMessageTest.ic" NAME="WaterFlowMessageTest Coverage Results" MODIFIED="1667506303423" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>org.javalab.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Java_Vjezba2$WaterFlowMessageTest_givenInitialValues_WhenToString_ThenCorrectString.ic" NAME="WaterFlowMessageTest.givenInitialValues_WhenToString_ThenCorrectString Coverage Results" MODIFIED="1667510610510" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>org.javalab.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Java_Vjezba2$WaterFlowMessageGeneratorImplTest.ic" NAME="WaterFlowMessageGeneratorImplTest Coverage Results" MODIFIED="1667507764421" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>org.javalab.*</FILTER>
+    </SUITE>
   </component>
 </project>

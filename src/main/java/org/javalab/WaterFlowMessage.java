@@ -1,6 +1,18 @@
 package org.javalab;
 
-public class WaterFlowMessage implements IWaterFlowMessage {
+import com.google.common.base.Splitter;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.ToString;
+import org.javalab.enums.WaterFlowMessageType;
+
+import java.util.Map;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class WaterFlowMessage {
     private String messageName;
     private String dataType;
     private int factor;
@@ -8,76 +20,29 @@ public class WaterFlowMessage implements IWaterFlowMessage {
     private String unit;
 
     public WaterFlowMessage(String serializedMessage) {
-        var keysValues = serializedMessage.split(": ");
+        deserializeMessage(serializedMessage);
     }
 
-    public WaterFlowMessage(String messageName, String dataType, int factor, int value, String unit) {
-        this.messageName = messageName;
-        this.dataType = dataType;
-        this.factor = factor;
-        this.value = value;
-        this.unit = unit;
-    }
+    private void deserializeMessage(String serializedMessage) {
+        Map<String, String> message = Splitter.on("\n")
+                .withKeyValueSeparator(": ")
+                .split(serializedMessage);
 
-    @Override
-    public String getMessageName() {
-        return messageName;
-    }
-
-    @Override
-    public void setMessageName(String messageName) {
-        this.messageName = messageName;
-    }
-
-    @Override
-    public String getDataType() {
-        return dataType;
-    }
-
-    @Override
-    public void setDataType(String dataType) {
-        this.dataType = dataType;
-    }
-
-    @Override
-    public int getFactor() {
-        return factor;
-    }
-
-    @Override
-    public void setFactor(int factor) {
-        this.factor = factor;
-    }
-
-    @Override
-    public int getValue() {
-        return value;
-    }
-
-    @Override
-    public void setValue(int value) {
-        this.value = value;
-    }
-
-    @Override
-    public String getUnit() {
-        return unit;
-    }
-
-    @Override
-    public void setUnit(String unit) {
-        this.unit = unit;
+        messageName = message.get("messageName");
+        dataType = message.get("dataType");
+        factor = Integer.parseInt(message.get("factor"));
+        value = Integer.parseInt(message.get("value"));
+        unit = message.get("unit");
     }
 
     @Override
     public String toString() {
         return String.format("""
-                        %s:
-                        Tip podatka: %s
-                        Faktor: %d
-                        Vrijednost: %d
-                        Jedinica: %s
-                        """,
+                        messageName: %s
+                        dataType: %s
+                        factor: %d
+                        value: %d
+                        unit: %s""",
                         messageName, dataType, factor, value, unit);
     }
 }

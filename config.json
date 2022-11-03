@@ -1,0 +1,6 @@
+{
+  "serverUri": "tcp://127.0.0.1:1883",
+  "clientId": "Java-Client",
+  "username": "admin",
+  "password": "12345678"
+}

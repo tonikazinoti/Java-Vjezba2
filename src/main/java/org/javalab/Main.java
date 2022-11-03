@@ -1,10 +1,9 @@
 package org.javalab;
 
-import org.javalab.enums.QualityOfService;
+import java.io.IOException;
 
 public class Main {
-    public static void main(String[] args) {
-        var app = new MqttApplication();
-        app.run();
+    public static void main(String[] args) throws IOException {
+        MqttApplication.run();
     }
 }
