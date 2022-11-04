@@ -5,19 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a8c48fca-ddff-4d40-8b6e-dbf811d434b5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/javalab/DeviceConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/javalab/ClientCallback.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/javalab/ClientCallback.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/javalab/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/javalab/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/javalab/MqttApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/javalab/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/javalab/MqttMessageHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/javalab/WaterFlowDevice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/javalab/WaterFlowMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/javalab/Sensor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/javalab/WaterFlowMessageGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/javalab/SensorLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/javalab/WaterFlowMessageGeneratorImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/javalab/WaterFlowMessageGeneratorImplTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/javalab/WaterFlowMessageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/javalab/SensorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/javalab/SensorLoader.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -177,7 +165,7 @@
       <updated>1666301442717</updated>
       <workItem from="1666301444475" duration="36344000" />
       <workItem from="1667492539026" duration="16241000" />
-      <workItem from="1667510518210" duration="11826000" />
+      <workItem from="1667510518210" duration="11836000" />
     </task>
     <servers />
   </component>
