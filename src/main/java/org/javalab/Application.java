@@ -1,20 +1,25 @@
 package org.javalab;
 
+import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
 import org.eclipse.paho.client.mqttv3.MqttAsyncClient;
 import org.eclipse.paho.client.mqttv3.MqttConnectOptions;
 import org.eclipse.paho.client.mqttv3.MqttException;
 import org.eclipse.paho.client.mqttv3.persist.MemoryPersistence;
-import org.json.JSONObject;
 
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+import java.util.*;
 
-public class MqttApplication {
+public class Application {
+    private static DeviceConfig CONFIG;
+
     public static void run() {
         try {
+            CONFIG = loadConfigurationFromFile();
             var client = connect();
-            new MqttMessageHandler(client, new WaterFlowMessageGeneratorImpl()).start();
+            new WaterFlowDevice(client, CONFIG.getSensors()).start();
         } catch (MqttException | IOException e) {
             e.printStackTrace();
             System.exit(-1);
@@ -22,30 +27,28 @@ public class MqttApplication {
     }
 
     private static MqttAsyncClient connect() throws MqttException, IOException {
-        var config = loadConfigurationFromFile();
         var client = new MqttAsyncClient(
-                config.getString("serverUri"), config.getString("clientId"), new MemoryPersistence());
+                CONFIG.getServerUri(), CONFIG.getClientId(), new MemoryPersistence());
         var clientCallback = new ClientCallback();
         client.setCallback(clientCallback);
 
         var mqttConnectOptions = new MqttConnectOptions();
         mqttConnectOptions.setCleanSession(true);
-        mqttConnectOptions.setUserName(config.getString("username"));
-        mqttConnectOptions.setPassword(config.getString("password").toCharArray());
+        mqttConnectOptions.setUserName(CONFIG.getUsername());
+        mqttConnectOptions.setPassword(CONFIG.getPassword().toCharArray());
 
         System.out.println("Connecting to broker: " + client.getServerURI());
-
         var token = client.connect(mqttConnectOptions);
         token.waitForCompletion();
-
         System.out.println("Connected");
 
         return client;
     }
 
-    private static JSONObject loadConfigurationFromFile() throws IOException {
+    private static DeviceConfig loadConfigurationFromFile() throws IOException {
         var configLines = Files.readAllLines(Paths.get("config.json"));
         var configJson = String.join("", configLines);
-        return new JSONObject(configJson);
+        Gson gson = new Gson();
+        return gson.fromJson(configJson, DeviceConfig.class);
     }
 }

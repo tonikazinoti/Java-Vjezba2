@@ -15,9 +15,6 @@ public class ClientCallback implements MqttCallback {
     public void messageArrived(String topic, MqttMessage mqttMessage) {
         System.out.println("\nMessage arrived from topic: " + topic + "\n");
         System.out.println(mqttMessage.toString() + "\n\n");
-
-        // example of how we would deserialize the message
-        var deserializedMessage = new WaterFlowMessage(mqttMessage.toString());
     }
 
     @Override

@@ -2,5 +2,39 @@
   "serverUri": "tcp://127.0.0.1:1883",
   "clientId": "Java-Client",
   "username": "admin",
-  "password": "12345678"
+  "password": "12345678",
+  "sensors": [
+    {
+      "sensorName": "Mjerač temperature vode",
+      "dataType": "int16",
+      "factor": 10,
+      "minValue": -32668,
+      "maxValue": 32668,
+      "unit": "°C"
+    },
+    {
+      "sensorName": "Mjerač tlaka vode",
+      "dataType": "int16",
+      "factor": 1000,
+      "minValue": 0,
+      "maxValue": 65336,
+      "unit": "Bar"
+    },
+    {
+      "sensorName": "Mjerač potrošnje vode u litrama",
+      "dataType": "int16",
+      "factor": 0,
+      "minValue": 0,
+      "maxValue": 65336,
+      "unit": "litra"
+    },
+    {
+      "sensorName": "Mjerač potrošnje vode u m3",
+      "dataType": "int16",
+      "factor": 10,
+      "minValue": 0,
+      "maxValue": 65336,
+      "unit": "m3"
+    }
+  ]
 }

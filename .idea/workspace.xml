@@ -5,22 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a8c48fca-ddff-4d40-8b6e-dbf811d434b5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/javalab/WaterFlowMessageGeneratorImplTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/javalab/WaterFlowMessageTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/javalab/enums/WaterFlowMessageType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/javalab/DeviceConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/config.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/javalab/ClientCallback.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/javalab/ClientCallback.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/javalab/IWaterFlowMessage.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/javalab/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/javalab/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/javalab/MqttApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/javalab/MqttApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/javalab/WaterFlowMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/javalab/WaterFlowMessage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/javalab/WaterFlowMessageGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/javalab/WaterFlowMessageGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/javalab/WaterFlowMessageGeneratorImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/javalab/WaterFlowMessageGeneratorImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/javalab/WaterFlowMessageHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/javalab/MqttMessageHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/javalab/enums/QualityOfService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/javalab/enums/QualityOfService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/javalab/MqttApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/javalab/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/javalab/MqttMessageHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/javalab/WaterFlowDevice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/javalab/WaterFlowMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/javalab/Sensor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/javalab/WaterFlowMessageGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/javalab/SensorLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/javalab/WaterFlowMessageGeneratorImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/javalab/WaterFlowMessageGeneratorImplTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/javalab/WaterFlowMessageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/javalab/SensorTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,10 +27,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
         <option value="Enum" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -82,7 +79,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WaterFlowMessageGeneratorImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SensorLoaderImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="vjezba2" />
       <extension name="coverage">
         <pattern>
@@ -91,13 +88,13 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.javalab" />
-      <option name="MAIN_CLASS_NAME" value="org.javalab.WaterFlowMessageGeneratorImplTest" />
+      <option name="MAIN_CLASS_NAME" value="org.javalab.SensorLoaderImplTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WaterFlowMessageGeneratorImplTest.whenGenerateWaterFlowMessages_ThenGenerateCorrectly" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SensorLoaderImplTest.whenGenerateWaterFlowMessages_ThenGenerateCorrectly" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="vjezba2" />
       <extension name="coverage">
         <pattern>
@@ -106,14 +103,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.javalab" />
-      <option name="MAIN_CLASS_NAME" value="org.javalab.WaterFlowMessageGeneratorImplTest" />
+      <option name="MAIN_CLASS_NAME" value="org.javalab.SensorLoaderImplTest" />
       <option name="METHOD_NAME" value="whenGenerateWaterFlowMessages_ThenGenerateCorrectly" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WaterFlowMessageTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SensorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="vjezba2" />
       <extension name="coverage">
         <pattern>
@@ -122,13 +119,13 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.javalab" />
-      <option name="MAIN_CLASS_NAME" value="org.javalab.WaterFlowMessageTest" />
+      <option name="MAIN_CLASS_NAME" value="org.javalab.SensorTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WaterFlowMessageTest.givenInitialValues_WhenToString_ThenCorrectString" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SensorTest.givenInitialValues_WhenToString_ThenCorrectString" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="vjezba2" />
       <extension name="coverage">
         <pattern>
@@ -137,14 +134,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.javalab" />
-      <option name="MAIN_CLASS_NAME" value="org.javalab.WaterFlowMessageTest" />
+      <option name="MAIN_CLASS_NAME" value="org.javalab.SensorTest" />
       <option name="METHOD_NAME" value="givenInitialValues_WhenToString_ThenCorrectString" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WaterFlowMessageTest.givenProperSerializedMessage_WhenConstruct_ThenDeserializeCorrectly" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SensorTest.givenProperSerializedMessage_WhenConstruct_ThenDeserializeCorrectly" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="vjezba2" />
       <extension name="coverage">
         <pattern>
@@ -153,7 +150,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.javalab" />
-      <option name="MAIN_CLASS_NAME" value="org.javalab.WaterFlowMessageTest" />
+      <option name="MAIN_CLASS_NAME" value="org.javalab.SensorTest" />
       <option name="METHOD_NAME" value="givenProperSerializedMessage_WhenConstruct_ThenDeserializeCorrectly" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -162,11 +159,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.WaterFlowMessageTest.givenInitialValues_WhenToString_ThenCorrectString" />
-        <item itemvalue="JUnit.WaterFlowMessageTest" />
-        <item itemvalue="JUnit.WaterFlowMessageGeneratorImplTest" />
-        <item itemvalue="JUnit.WaterFlowMessageGeneratorImplTest.whenGenerateWaterFlowMessages_ThenGenerateCorrectly" />
-        <item itemvalue="JUnit.WaterFlowMessageTest.givenProperSerializedMessage_WhenConstruct_ThenDeserializeCorrectly" />
+        <item itemvalue="JUnit.SensorTest.givenProperSerializedMessage_WhenConstruct_ThenDeserializeCorrectly" />
+        <item itemvalue="JUnit.SensorTest.givenInitialValues_WhenToString_ThenCorrectString" />
+        <item itemvalue="JUnit.SensorTest" />
+        <item itemvalue="JUnit.SensorLoaderImplTest" />
+        <item itemvalue="JUnit.SensorLoaderImplTest.whenGenerateWaterFlowMessages_ThenGenerateCorrectly" />
       </list>
     </recent_temporary>
   </component>
@@ -180,7 +177,7 @@
       <updated>1666301442717</updated>
       <workItem from="1666301444475" duration="36344000" />
       <workItem from="1667492539026" duration="16241000" />
-      <workItem from="1667510518210" duration="1723000" />
+      <workItem from="1667510518210" duration="11826000" />
     </task>
     <servers />
   </component>
@@ -197,6 +194,18 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="org.javalab.DeviceConfig" memberName="password" />
+      </pinned-members>
+    </pin-to-top-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="sensorsJsonArr.myArrayList.get(0)" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Java_Vjezba2$WaterFlowMessageTest.ic" NAME="WaterFlowMessageTest Coverage Results" MODIFIED="1667506303423" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

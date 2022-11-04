@@ -2,24 +2,25 @@ package org.javalab;
 
 import com.google.common.base.Splitter;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import lombok.ToString;
-import org.javalab.enums.WaterFlowMessageType;
 
 import java.util.Map;
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class WaterFlowMessage {
-    private String messageName;
+@Builder
+public class Sensor {
+    private String sensorName;
     private String dataType;
     private int factor;
-    private int value;
+    private int minValue;
+    private int maxValue;
     private String unit;
 
-    public WaterFlowMessage(String serializedMessage) {
+    public Sensor(String serializedMessage) {
         deserializeMessage(serializedMessage);
     }
 
@@ -28,21 +29,25 @@ public class WaterFlowMessage {
                 .withKeyValueSeparator(": ")
                 .split(serializedMessage);
 
-        messageName = message.get("messageName");
+        sensorName = message.get("messageName");
         dataType = message.get("dataType");
         factor = Integer.parseInt(message.get("factor"));
-        value = Integer.parseInt(message.get("value"));
+        minValue = Integer.parseInt(message.get("minValue"));
+        maxValue = Integer.parseInt(message.get("maxValue"));
         unit = message.get("unit");
     }
 
-    @Override
-    public String toString() {
+    public String getMeasurementMessage() {
         return String.format("""
                         messageName: %s
                         dataType: %s
                         factor: %d
                         value: %d
                         unit: %s""",
-                        messageName, dataType, factor, value, unit);
+                        sensorName, dataType, factor, generateRandomNumber(), unit);
+    }
+
+    private int generateRandomNumber() {
+        return (int) (Math.floor(Math.random() * (maxValue - minValue)) + minValue);
     }
 }
